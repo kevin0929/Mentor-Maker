@@ -34,7 +34,7 @@ class ToPickTeacher:
             if TeacherList[i].will == 'T':
                 continue
             else:
-                for j in range(i, len(TeacherList)):
+                for j in range(i+1, len(TeacherList)):
                     if TeacherList[j].will == 'T':
                         TeacherList[i],TeacherList[j] = TeacherList[j],TeacherList[i]
                         break
@@ -57,7 +57,7 @@ class ToPickTeacher:
                 else:
                     Min = '999'
                     flag = -1
-                    for j in range(i+1, len(TeacherList)):
+                    for j in range(i, len(TeacherList)):
                         if (TeacherList[j].year < Min) and (TeacherList[j].name not in BestTeacherList):
                             Min = TeacherList[j].year
                             flag = j
