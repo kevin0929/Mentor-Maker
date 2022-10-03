@@ -64,9 +64,4 @@ class Application():
         self.first = self.First.get()
         self.second = self.Second.get()
         self.PeopleNumber = self.People.get()
-    
-        
-
-
-
         
